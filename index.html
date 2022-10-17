@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Esse é um projeto que busca o signo de determinado usuário com base nas informações inseridas nesse formulário">
+    <meta name="keywords" content="busca signo, html, xml, php, programacao web, css">
+    <meta name="author" content="Gustavo Maciel Resende">
+    <title>Pesquisa Signo</title>
+    <link rel="sortcut icon" href="img/slogan.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/41586de03b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <form action="busca_signo.php" method="POST">
+        <div class="titulo">
+        <h2>Pesquisa Signo</h2>
+        </div>
+       <label class="l_nome" for="campo_nome"><i class="fa-solid fa-user"></i></label>
+       <div class="campo_Nome"><input type="text" name="nome" id="campo_nome" placeholder="Digite seu nome" required/></div><br>
+       
+       <div class="campo_dataNasc"><input type="date" name="data" id="dt_nasc" max="2022-12-31" required/></div><br>
+        
+       <label class="l_pesquisar" for="botao_Enviar"><i class="fa-solid fa-arrow-right"></i></label>
+       <div class="botao_Enviar"><b><input type="submit" name="Enviar" value="Pesquisar"></b></div>
+    
+</body>
+</html>
